@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 8vh;
+}
+
+.loginbox1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.loginbox{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+
+h{
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: rgb(23, 23, 23);
+}
+
+label{
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+}
+
+input{
+    border: 0;
+    border-radius: 2px;
+    width: 320px;
+    height: 40px;
+    background-color: rgb(241, 241, 241);
+    margin-bottom: 14px;
+}
+
+footer{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+}
+
+.loginbutton{
+    width: 320px;
+    height: 40px;
+    background-color: rgb(137, 167, 255);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.5s all;
+}
+
+.loginbutton:hover{
+    background-color: royalblue;
+}
+
+.q1{
+    display: flex;
+    margin-top:3vh;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+
+.signup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 320px;
+        height: 40px;
+        background-color: rgb(241, 241, 241);
+        border: none;
+        border-radius: 5px;
+        color: rgb(93, 93, 93);
+        transition: 1s all;
+}
+
+.signup:hover{
+    background-color: rgb(230, 230, 230);;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 12px;
+    margin: 7px;
+}

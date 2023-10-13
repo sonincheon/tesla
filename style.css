@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@500;700&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Onest', sans-serif;
+}
+
+header{
+    margin-top: 10px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden auto;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 3vw;
+    z-index: 6;
+}
+icon{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.header-menu1{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    z-index: 2;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /*ul의 높이를 안보이게 처리*/
+    transition-property: display;
+    transition-delay: 2s;
+    
+}
+
+.header-menu2{
+    display: none;
+    position: absolute;
+    z-index: 2; 
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /*ul의 높이를 안보이게 처리*/
+}
+
+.header-menu3{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /*ul의 높이를 안보이게 처리*/
+}
+
+.header-menu4{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /*ul의 높이를 안보이게 처리*/
+}
+
+.menu-ul-color:hover{
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgba(70, 70, 70, 0.4);
+}
+
+header-menu-icon{
+    display: flex;
+    margin-right: 4vw;
+}
+
+header-menu-list{
+    border-left: 2px solid rgb(220, 220, 220);
+    padding-left: 3vw ;
+}
+
+header-menu-list1{
+    display: flex;
+    flex-direction: column ;
+    margin: 0 7vw;
+}
+
+icon3{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-list{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 14px;
+    margin: 8px;
+}
+
+.menu-list:hover{
+    border-radius: 3px;
+    background-color: rgba(162, 162, 162, 0.489);
+}
+.carimg{
+    width: 220px;
+}
+
+.carimg:hover{
+    position: relative;
+    bottom:5px
+
+}
+.car{
+    
+    font-size: 17px;
+    font-weight: bold;
+}
+.carlink{
+    text-decoration: underline;
+    font-size: 12px;
+}
+.carlink:hover{
+    font-weight: bold;
+}
+video{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+section1{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    z-index: 1;
+}
+
+section2{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section3{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background:url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section4{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section5{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background:url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section6{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section7{
+    display: block;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    background-image: url(./image/Homepage-Accessories-Desktop-NA-APAC.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+middle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.mains{
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.mains2{
+    font-size: 2px;
+}
+
+.mains-1{
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 0 0 1px black;
+    font-weight: bold;
+}
+
+.mains-2{
+    font-size: 2px;
+    color: white;
+}
+
+section-button1{
+    display: flex ;                                                                        tems: center;
+    justify-content: center;
+    margin-top: 60vh;
+    margin-bottom: 3vh;
+}
+section-button{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65vh;
+}
+
+button{
+    font-size: 10px;
+    padding: 8px 60px;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+foot-info{
+    display: flex block ;
+    align-items: center;
+    justify-content: center;
+    font-size: 1px;
+    flex-flow: column nowrap;
+}
+
+foot-link{
+    margin-bottom: 2vh;
+}
+
+detail-info{
+    width: 370px;
+    font-size: 1px;
+    text-align: center;
+    color: white;
+}
+
+.foot-link1{
+    text-decoration: none;
+    font-size: 1px;
+    color: rgb(186, 186, 186);
+    margin: auto 5px;
+}
+
+.menu-ul-color{
+    display: inline;
+    list-style: none;
+    font-size: 13px;
+    margin: auto 5px;
+    margin-top: 20px;
+    padding: 6px;
+    color: black;
+    font-weight: bold;
+}
+
+.mains-link{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 3px;
+}
+.mains-link:hover{
+    border-bottom: 2px solid black ;
+}
+
+.button1{
+    text-decoration: none;
+    font-size: 10px;
+    padding: 8px 60px;
+    border-radius: 2px;
+    border: 2px solid aliceblue;
+    background: none;
+    color: aliceblue;
+    transition: 1.5s cubic-bezier(0, 0.71, 1, 1);
+    font-weight: bold;
+}
+
+.button1:hover{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+.button2{
+    text-decoration: none;
+    font-size: 10px;
+    padding: 8px 55px;
+    border-radius: 2px;
+    border: 0px ;
+    background-color: rgba(0,0,0 ,0.7);
+    color: aliceblue;
+    margin: auto 10px;
+}
+
+.button2:hover{
+    scale: 1.1;
+}
+
+.button3{
+    text-decoration: none;
+    font-size: 10px;
+    padding: 8px 60px;
+    border-radius: 2px;
+    border: 0px ;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    margin: auto 10px;
+}
+.button3:hover{
+    scale: 1.1;
+}
+
+icon2{
+    margin-top: 6px;
+    display: inline;
+}
+
+.icon2{
+    margin: 2px;
+    padding:3px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon2:hover{
+    padding: 3px;
+    align-items: center;
+    border-radius: 5px;
+    background-color:  rgba(70, 70, 70, 0.4);
+}
+
+i{
+    color: black;
+}
+
+.fixed{
+    color: #fff;
+}
