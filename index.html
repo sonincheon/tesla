@@ -2,19 +2,57 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전기차, 태양광 및 청정 에너지 | Tesla 대한민국</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li:nth-child(1)").mouseenter(function(){
+                $(".header-menu1").css({"display" : "flex"})
+                })
+                $(".header-menu1").mouseleave(function(){
+                $(this).css({"display" : "none"})
+            })
+            $("li:nth-child(2)").mouseenter(function(){
+                $(".header-menu2").css({"display" : "flex"})
+                })
+                $(".header-menu2").mouseleave(function(){
+                $(this).css({"display" : "none"})
+            })
+            $("li:nth-child(3)").mouseenter(function(){
+                $(".header-menu3").css({"display" : "flex"})
+                })
+                $(".header-menu3").mouseleave(function(){
+                $(this).css({"display" : "none"})
+            })
+            $("li:nth-child(4)").mouseenter(function(){
+                $(".header-menu4").css({"display" : "flex"});
+                });
+                $(".header-menu4").mouseleave(function(){
+                $(this).css({"display" : "none"});
+            });
+        });
+        $(document).ready(function () {
+            $("button[name='menu']").click(function(){
+                $(".mobile-menu").css({"display" : "flex"});
+                });
+            $("button[name='cancle']").click(function(){
+            $(".mobile-menu").css({"display" : "none"});
+            });
+            });
+    </script>
+</head>
 <body>
     <header>
-        <icon1 href="#">테슬라</icon1>
-        <div>
+        <icon1 href="#"></icon1>
+        <menus>
             <li class="menu-ul-color" href="#">차량</li>
-            
             <li class="menu-ul-color" href="#">충전</li>
-            <li class="menu-ul-color" href="#">살펴보기</li>
+            <li class="menu-ul-color" href="#">살펴보기</li>3 
             <li class="menu-ul-color" href="#">shop</li>
-        </div>
+        </menus>
         <icon2>
             <a class="icon2" href="#">
                 <i class="fa-solid fa-circle-info"></i>
@@ -22,12 +60,15 @@
             <a class="icon2" href="#">
                 <i class="fa-solid fa-globe"></i>
             </a>
-            <a class="icon2" href="#">
+            <a class="icon2" href="login.html">
                 <i class="fa-regular fa-circle-user"></i>
                 </a>
-        </icon2>
+        </icon2> 
+        <button class="menu-bar" name="menu">
+            메뉴
+        </button>
     </header>
-<!--------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------->
     <header-menu class="header-menu1">
         <header-menu-icon>
             <icon3>
@@ -233,34 +274,43 @@
             </section7>
         </foot-info>
         </div>
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("li:nth-child(1)").mouseenter(function(){
-                    $(".header-menu1").css({"display" : "flex"})
-                    })
-                    $(".header-menu1").mouseleave(function(){
-                    $(this).css({"display" : "none"})
-                })
-                $("li:nth-child(2)").mouseenter(function(){
-                    $(".header-menu2").css({"display" : "flex"})
-                    })
-                    $(".header-menu2").mouseleave(function(){
-                    $(this).css({"display" : "none"})
-                })
-                $("li:nth-child(3)").mouseenter(function(){
-                    $(".header-menu3").css({"display" : "flex"})
-                    })
-                    $(".header-menu3").mouseleave(function(){
-                    $(this).css({"display" : "none"})
-                })
-                $("li:nth-child(4)").mouseenter(function(){
-                    $(".header-menu4").css({"display" : "flex"})
-                    })
-                    $(".header-menu4").mouseleave(function(){
-                    $(this).css({"display" : "none"})
-                })
-                });
-        </script>
+
+        <div class="mobile-menu">
+            <canclebox>
+                <a></a>
+                <button name="cancle" class="cancle"><i class="fa-solid fa-xmark"></i></button>
+            </canclebox>
+            <a class="mmlink" href="#">
+                <p>차량</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a class="mmlink" href="#">
+                <p>충전</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a class="mmlink" href="#">
+                <p>살펴보기</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a class="mmlink" href="#">
+                <p>SHOP</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a class="mmlink" href="#">
+                <p>지원</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a class="mmlink" href="#">
+                <p>
+                <i class="fa-solid fa-earth-americas"></i>   
+                대한민국</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a class="mmlink" href="#">
+                <p>
+                    <i class="fa-solid fa-person"></i>
+                    계정</p>
+            </a>
+        </div>
 </body>
 </html>
