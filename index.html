@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전기차, 태양광 및 청정 에너지 | Tesla 대한민국</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css"> <!--Style.css 불러오기-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--아이콘 불러오기-->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"> //제이쿼리 </script>
     <script>
+
+        // 메뉴 hovor on/off 동작 
         $(document).ready(function(){
             $("li:nth-child(1)").mouseenter(function(){
                 $(".header-menu1").css({"display" : "flex"})
@@ -34,6 +36,8 @@
                 $(this).css({"display" : "none"});
             });
         });
+
+        // 메뉴 click on/off 동작 
         $(document).ready(function () {
             $("button[name='menu']").click(function(){
                 $(".mobile-menu").css({"display" : "flex"});
@@ -45,12 +49,13 @@
     </script>
 </head>
 <body>
-    <header>
+    <!--헤더 nav 메뉴 : absolute로 고정 -->
+    <header> 
         <icon1 href="#"></icon1>
         <menus>
             <li class="menu-ul-color" href="#">차량</li>
             <li class="menu-ul-color" href="#">충전</li>
-            <li class="menu-ul-color" href="#">살펴보기</li>3 
+            <li class="menu-ul-color" href="#">살펴보기</li>
             <li class="menu-ul-color" href="#">shop</li>
         </menus>
         <icon2>
@@ -64,11 +69,12 @@
                 <i class="fa-regular fa-circle-user"></i>
                 </a>
         </icon2> 
+        <!-- 모바일용 메뉴 -->
         <button class="menu-bar" name="menu">
             메뉴
         </button>
     </header>
-<!-------------------------------------------------------------------------------------------->
+        <!--메뉴 hover 하위 리스트-->
     <header-menu class="header-menu1">
         <header-menu-icon>
             <icon3>
@@ -193,8 +199,9 @@
         </header-menu-icon>
     </header-menu>
 <!----------------------------------------------------------------------------------------------->
-
-        <div class="container">
+    <!--main -->
+    <div class="container">
+            <!--섹션 1-->
             <section1>
                 <video src="./image/Tesla .webm" height="100%" width="100%" autoplay muted loop></video>
                 <middle>
@@ -205,6 +212,7 @@
                 <a class="button1" href="#">시승 신청하기</a>
                 </section-button>
             </section1>
+            <!--섹션 2-->
             <section2>
                 <middle>
                     <p class="mains">Model Y</p>
@@ -214,6 +222,7 @@
                 <a class="button3" href="#">주문하기</a>
             </section-button>
             </section2>
+            <!--섹션 3-->
             <section3>
                 <middle>
                     <p class="mains">Model X</p>
@@ -224,6 +233,7 @@
                 <a class="button3" href="#">주문하기</a>
             </section-button>
         </section3>
+        <!--섹션 4-->
         <section4>
             <middle>
                 <p class="mains">Model S</p>
@@ -234,6 +244,7 @@
             <a class="button3" href="#">주문하기</a>
             </section-button>
         </section4>
+        <!--섹션 5-->
         <section5>
             <middle>
                 <p class="mains">Model 3</p>
@@ -243,6 +254,7 @@
             <a class="button3" href="#">주문하기</a>
             </section-button>
         </section5>
+        <!--섹션 6-->
         <section6>
             <middle>
                 <p class="mains">태양광과 Powerwall</p>
@@ -252,6 +264,7 @@
             <a class="button2" href="#">자세히 알아보기</a>
             </section-button>
         </section6>
+        <!--섹션 7-->
         <section7>
             <middle>
                 <p class="mains">액세서리</p>
@@ -259,22 +272,23 @@
             <section-button1>
             <a class="button2" href="#">지금 쇼핑하기</a>
             </section-button1>
+            <!--풋터 라인-->
             <foot-info>
                 <foot-link>
-            <a class="foot-link1" href="#">Tesla © 2023</a>
-            <a class="foot-link1" href="#">개인정보 처리방침 및 법적고지</a>
-            <a class="foot-link1" href="#">이용 약관</a>
-            <a class="foot-link1" href="#">문의하기</a>
-            <a class="foot-link1" href="#">새 소식</a>
-            <a class="foot-link1" href="#">위치</a>
+                    <a class="foot-link1" href="#">Tesla © 2023</a>
+                    <a class="foot-link1" href="#">개인정보 처리방침 및 법적고지</a>
+                    <a class="foot-link1" href="#">이용 약관</a>
+                    <a class="foot-link1" href="#">문의하기</a>
+                    <a class="foot-link1" href="#">새 소식</a>
+                    <a class="foot-link1" href="#">위치</a>
                 </foot-link>
-            <detail-info>
-                테슬라코리아 유한회사 | 사업자등록번호 : 524-88-00237 | 데이비드존파인스타인, 케네스어니스트무어 | 통신판매업신고: 제2016-서울강남-02964호 | 사업자정보확인 | 호스팅제공자: Tesla Inc. | 주소 : 서울특별시 강남구 테헤란로 134, 14층 | 대표전화 : 080-617-1388 | southkorea@tesla.com
-            </detail-info>  
-            </section7>
-        </foot-info>
-        </div>
-
+                <detail-info>
+                    테슬라코리아 유한회사 | 사업자등록번호 : 524-88-00237 | 데이비드존파인스타인, 케네스어니스트무어 | 통신판매업신고: 제2016-서울강남-02964호 | 사업자정보확인 | 호스팅제공자: Tesla Inc. | 주소 : 서울특별시 강남구 테헤란로 134, 14층 | 대표전화 : 080-617-1388 | southkorea@tesla.com
+                </detail-info>  
+            </foot-info>
+        </section7>
+    </div>
+    <!-- 모바일 반응형 메뉴 리스트 -->
         <div class="mobile-menu">
             <canclebox>
                 <a></a>
